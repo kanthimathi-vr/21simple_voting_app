@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Voting Results</h2>
+<div class="results">
+    {% for option, count in votes.items() %}
+    <div class="result-item {% if selected == option %}highlight{% endif %}">
+        <img src="{{ url_for('static', filename=options[option]) }}" alt="{{ option }}">
+        <p><strong>{{ option.capitalize() }}</strong></p>
+        <p>{{ count }} vote{{ 's' if count != 1 else '' }}</p>
+        {% if selected == option %}
+            <p class="you-voted">✅ You voted this</p>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+<a href="{{ url_for('vote_page') }}" class="back-link">🔙 Back to vote</a>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Cast Your Vote!</h2>
+<div class="vote-options">
+    {% for key, icon in options.items() %}
+    <a href="{{ url_for('cast_vote', option=key) }}" class="vote-card">
+        <img src="{{ url_for('static', filename=icon) }}" alt="{{ key }}">
+        <p>{{ key.capitalize() }}</p>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

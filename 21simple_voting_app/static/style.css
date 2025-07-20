@@ -1,0 +1,118 @@
+/* Leafy green theme */
+body {
+    background-color: #e9f5ec; /* soft green background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+    color: #2d4739; /* dark green text */
+}
+
+/* Green navbar */
+nav {
+    background-color: #2e7d32; /* strong green */
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.nav-brand {
+    color: #e9f5ec;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-brand:hover {
+    color: #b6e2b3;
+}
+
+/* Vote cards */
+.vote-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.vote-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    width: 180px;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    color: #2d4739;
+}
+
+.vote-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.vote-card img {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Results styling */
+.results {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.result-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.result-item img {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    border: 2px solid #2e7d32;
+    box-shadow: 0 0 10px rgba(46, 125, 50, 0.3);
+}
+
+.you-voted {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    background: #2e7d32;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.back-link:hover {
+    background: #256c28;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #4d6b5a;
+    font-size: 0.9rem;
+}
